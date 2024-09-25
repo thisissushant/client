@@ -7,7 +7,7 @@ import {
   updatePost,
   deletePost,
 } from "../redux/blogSlice";
-import { FaEdit, FaTrash, FaPlus } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa";
 
 const BlogCard = ({ post, onEdit, onDelete }) => (
   <div className="bg-white shadow-md rounded-lg overflow-hidden flex flex-col h-96 w-64 m-4">
@@ -93,7 +93,7 @@ const BlogPage = () => {
           onClick={() => setShowModal(true)}
           className="bg-white text-purple-600 border border-purple-600 px-4 py-2 rounded hover:bg-purple-100 flex items-center"
         >
-          <FaPlus className="mr-2" /> Create New Post
+          Add New
         </button>
       </div>
       <div className="flex flex-wrap justify-center sm:justify-start">
