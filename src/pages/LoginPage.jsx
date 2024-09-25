@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { login } from "../redux/authSlice";
 
 const LoginPage = () => {
@@ -69,6 +69,16 @@ const LoginPage = () => {
             >
               {isLoading ? "Logging in..." : "Log in"}
             </button>
+          </div>
+
+          <div className="text-sm text-center">
+            <span>Do not have an account? </span>
+            <Link
+              to="/signup"
+              className="font-medium text-purple-500 hover:text-purple-600"
+            >
+              Sign up here
+            </Link>
           </div>
         </form>
       </div>
